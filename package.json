@@ -1,0 +1,17 @@
+{
+  "name": "c-cms_app",
+  "version": "0.0.1",
+  "description": "Application du CMS C-CMS",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^3.0.10"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Mathieu Lagacé",
+  "license": "MIT"
+}
