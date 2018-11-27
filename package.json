@@ -1,6 +1,6 @@
 {
   "name": "c-cms_app",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Application du CMS C-CMS",
   "main": "main.js",
   "dependencies": {
