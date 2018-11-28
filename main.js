@@ -11,7 +11,7 @@ function createWindow () {
 
 app.on('ready', function() {
   createWindow()
-  autoUpdater.checkForUpdates() 
+  autoUpdater.checkForUpdates()
 })
 
 app.on('window-all-closed', () => {
