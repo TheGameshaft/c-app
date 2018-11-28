@@ -1,8 +1,0 @@
-directories:
-  output: dist
-  buildResources: build
-appId: c-app.Id
-publish:
-  provider: github
-  token: <stripped sensitive data>
-electronVersion: 3.0.10
