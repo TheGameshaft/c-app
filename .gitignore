@@ -1,1 +1,2 @@
 electron-builder.yml
+dist\win-unpacked\resources\app-update.yml
