@@ -1,8 +1,8 @@
-version: 0.0.8
+version: 0.1.0
 files:
-  - url: c-cms_app-setup-0.0.8.exe
-    sha512: IEddzQChvjM5kHaMhPW2ERMBsfUjkrttTcO28pGoJT6sokdZnG5G1XeAan/q+4e0As3uEHWr9cUlQNxoX1FfPQ==
-    size: 38844194
-path: c-cms_app-setup-0.0.8.exe
-sha512: IEddzQChvjM5kHaMhPW2ERMBsfUjkrttTcO28pGoJT6sokdZnG5G1XeAan/q+4e0As3uEHWr9cUlQNxoX1FfPQ==
-releaseDate: '2018-11-28T17:37:09.311Z'
+  - url: c-cms_app-setup-0.1.0.exe
+    sha512: y8M7RQ899RQK0r8lXNu/C4ZKbCre2CMh5v/ahuNQStxQY1kPx4LLyErCcEB8Gh0ZtdnS16xclpmRDl46PKspHw==
+    size: 38844238
+path: c-cms_app-setup-0.1.0.exe
+sha512: y8M7RQ899RQK0r8lXNu/C4ZKbCre2CMh5v/ahuNQStxQY1kPx4LLyErCcEB8Gh0ZtdnS16xclpmRDl46PKspHw==
+releaseDate: '2018-11-28T17:44:22.856Z'

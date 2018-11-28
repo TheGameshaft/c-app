@@ -1,6 +1,2 @@
 electron-builder.yml
-dist/win-unpacked/resources/app-update.yml
-dist/win-unpacked/resources/app-update.yml
-dist/latest.yml
-dist/c-cms_app Setup 0.0.6.exe.blockmap
-dist/c-cms_app Setup 0.0.6.exe
+dist/
