@@ -4,10 +4,11 @@
     <title>C-CMS - Escadron 697</title>
     <!-- Styles -->
     <link href="assets/app.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <html>
-    <body style="background-color: #343a40 !important">
+    <body style="background-color: #343a40 !important; overflow: hidden;">
         <div id="app">
             <div id="navbar" style="display: none">
                 <nav style="background:#272c33">
@@ -16,7 +17,15 @@
                     </div>
                 </nav>
             </div>
-            <webview id="foo" src="https://escadron697.ca/login/" style="width:100%;height:100%;"></webview>
+            <div id="navback" style="display: none;position: absolute;margin-left: 99vw;margin-top: 99vh">
+                <div style="right:25px;position:absolute;bottom:15px;">
+                    <a onclick="document.querySelector('webview').goBack();">
+                        <i class="fas fa-circle" style="color:#343a40;font-size:45px;margin-top:-25px;"></i>
+                        <i class="fas fa-chevron-left" style="color:white;position: absolute;font-size:30px;margin-top: -37px;margin-left: 11.5px;"></i>
+                    </a>
+                </div>
+            </div>
+            <webview id="foo" src="https://escadron697.ca/login/" style="width:100%;height:98%;"></webview>
         </div>
         <script type="text/javascript">
         // Event handlers for loading events.
@@ -24,6 +33,7 @@
         onload = () => {
             const webview = document.getElementById('foo')
             const navbar = document.getElementById('navbar')
+            const navback = document.getElementById('navback')
 
             const loadstart = () => {
                 if (webview.getURL() == "https://escadron697.ca/") {
@@ -35,9 +45,12 @@
             const loadstop = () => {
                 if (webview.getURL() == "https://escadron697.ca/login") {
                     navbar.style.display = "block"
+                    navback.style.display = "none"
                 } else {
                     navbar.style.display = "none"
+                    navback.style.display = "block"
                 }
+
             }
 
             webview.addEventListener('dom-ready', loadstart)

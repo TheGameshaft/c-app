@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+const {autoUpdater} = require("electron-updater");
 
 function createWindow () {
   // Cree la fenetre du navigateur.
@@ -8,7 +9,18 @@ function createWindow () {
   win.loadFile('index.html')
 }
 
-app.on('ready', createWindow)
+app.on('ready', function() {
+  createWindow()
+  autoUpdater.checkForUpdates() 
+})
+
+autoUpdater.on('update-downloaded', (info) => {
+  win.webContents.send('updateReady')
+});
+
+ipcMain.on("quitAndInstall", (event, arg) => {
+  autoUpdater.quitAndInstall();
+})
 
 app.on('window-all-closed', () => {
   app.quit()
