@@ -14,14 +14,6 @@ app.on('ready', function() {
   autoUpdater.checkForUpdates() 
 })
 
-autoUpdater.on('update-downloaded', (info) => {
-  win.webContents.send('updateReady')
-});
-
-ipcMain.on("quitAndInstall", (event, arg) => {
-  autoUpdater.quitAndInstall();
-})
-
 app.on('window-all-closed', () => {
   app.quit()
 })
